@@ -7,14 +7,23 @@ export const auth = betterAuth<BetterAuthOptions>({
 		provider: "postgresql",
 	}),
 	trustedOrigins: [process.env.CORS_ORIGIN || ""],
-	emailAndPassword: {
-		enabled: true,
-	},
-	advanced: {
-		defaultCookieAttributes: {
-			sameSite: "none",
-			secure: true,
-			httpOnly: true,
+		emailAndPassword: {
+			enabled: true,
 		},
-	},
-});
+		github: {
+			enabled: true,
+			clientId: process.env.GITHUB_CLIENT_ID,
+			clientSecret: process.env.GITHUB_CLIENT_SECRET,
+			syncUser: {
+				email: true,
+			},
+		},
+		google: {
+			enabled: true,
+			clientId: process.env.GOOGLE_CLIENT_ID,
+			clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+			syncUser: {
+				email: true,
+			},
+		},
+	});
