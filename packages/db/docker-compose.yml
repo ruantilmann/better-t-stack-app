@@ -1,9 +1,9 @@
-name: my-better-t-app
+name: shoply3
 
 services:
   postgres:
     image: postgres
-    container_name: my-better-t-app-postgres
+    container_name: shoply3-postgres
     environment:
       POSTGRES_DB: my-better-t-app
       POSTGRES_USER: postgres
@@ -11,7 +11,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - my-better-t-app_postgres_data:/var/lib/postgresql
+      - shoply3_postgres_data:/var/lib/postgresql
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 10s
@@ -20,4 +20,4 @@ services:
     restart: unless-stopped
 
 volumes:
-  my-better-t-app_postgres_data:
+  shoply3_postgres_data:

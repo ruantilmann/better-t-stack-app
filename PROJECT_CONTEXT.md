@@ -1,6 +1,6 @@
 # Visão Geral do Projeto
 
-- Nome: `my-better-t-app`
+- Nome: `Shoply3`
 - Stack: monorepo com Next.js 16 (React 19), Fastify 5, Prisma 6, PostgreSQL, Turborepo, Tailwind v4, shadcn/ui, Better-Auth
 - Objetivo: base full‑stack pronta para autenticação (email/senha e OAuth), UI moderna, servidor rápido e camada de dados tipada.
 

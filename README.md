@@ -1,4 +1,4 @@
-# my-better-t-app
+# Shoply3
 
 Monorepo moderno baseado em TypeScript com Next.js 16 (React 19), Fastify 5, Prisma 6, PostgreSQL, Better-Auth e Turborepo.
 
